@@ -1,0 +1,11 @@
+command-awake-default = Stop come di consueto
+command-awake-stay = Mantieni attivo
+command-awake-after-jobs = Stop a lavori finiti
+awake-submenu = Awake
+awake-mode-default = Predefinito
+awake-mode-stay = Mantieni attivo
+awake-mode-after-jobs = Stop a lavori finiti
+awake-tooltip-default = Awake: il Mac va in stop come di consueto
+awake-tooltip-stay = Awake: il Mac e il monitor restano attivi
+awake-tooltip-after-jobs-busy = Awake: attivo finché i lavori non finiscono
+awake-tooltip-after-jobs-idle = Awake: in stop come di consueto, nessun lavoro in corso

@@ -1,0 +1,29 @@
+[plugin]
+name = "sephiroth74/awake"
+version = "0.1.0"
+kind = "luau"
+api = "^0.1"
+license = "MIT"
+description = "Keeps the Mac awake from a button beside the window's buttons: always, or while a tab runs a program"
+repository = "https://github.com/sephiroth74/sleip-awake"
+keywords = ["awake", "sleep", "caffeine", "power"]
+authors = ["Alessandro Crugnola"]
+
+# It activates as its button first shows, beside the window's buttons, or
+# as one of its commands first runs.
+[activation]
+on = ["slot:title-buttons", "command:awake.*"]
+
+# The Mac kept from idle sleep, and the tabs' marks of a program that runs,
+# which Sleep After Jobs reads.
+[capabilities]
+keep-awake = true
+process-read = true
+
+[contributes]
+commands = [
+    { name = "awake.default", title = "Sleep as Usual", category = "view" },
+    { name = "awake.stay", title = "Stay Awake", category = "view" },
+    { name = "awake.after-jobs", title = "Sleep After Jobs", category = "view" },
+]
+slots = ["title-buttons"]
