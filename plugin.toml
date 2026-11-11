@@ -2,7 +2,7 @@
 name = "sephiroth74/awake"
 version = "0.1.0"
 kind = "luau"
-api = "^0.1"
+api = "^0.1.1"
 license = "MIT"
 description = "Keeps the Mac awake from a button beside the window's buttons: always, or while a tab runs a program"
 repository = "https://github.com/sephiroth74/sleip-awake"
